@@ -13,10 +13,10 @@
 // Hint: Don't forget to check for bad values like null/undefined
 
 function countSheeps(arrayOfSheep) {
-	let result = 0
+	let result = 0;
 	for (let key of arrayOfSheep) {
-		if (key) result++
+		if (key) result++;
 	}
-	return result
+	return result;
 }
 

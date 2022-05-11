@@ -19,11 +19,11 @@
 // NOTE 2: The 0x0 (empty matrix) is represented as en empty array inside an array [[]].
 
 snail = function (array) {
-	let exitArray = []
+	let exitArray = [];
 	while (array.length) {
-		exitArray.push(...array.shift())
-		array.map(row => exitArray.push(row.pop()))
-		array.reverse().map(row => row.reverse())
-	}
-	return exitArray
-}
+		exitArray.push(...array.shift());
+		array.map(row => exitArray.push(row.pop()));
+		array.reverse().map(row => row.reverse());
+	};
+	return exitArray;
+};

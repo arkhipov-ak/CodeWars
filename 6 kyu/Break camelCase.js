@@ -10,5 +10,5 @@ function solution(string) {
 		if(element = element.toUpperCase()) element = ' ' + element;
 		return element;
 	});
-	return element.join('');
+	return string.join('');
 };

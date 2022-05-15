@@ -6,9 +6,9 @@
 // ""             =>  ""
 
 function solution(string) {
-	string = string.split('').map(element => {
-		if(element = element.toUpperCase()) element = ' ' + element;
-		return element;
-	});
-	return string.join('');
+	string = string.split('').map(function (element) {
+		if (element === element.toUpperCase()) element = ' ' + element
+		return element
+	})
+	return string.join('')
 };

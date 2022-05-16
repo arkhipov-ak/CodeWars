@@ -4,5 +4,5 @@
 // * url = "http://www.zombie-bites.com"         -> domain name = "zombie-bites"
 // * url = "https://www.cnet.com"                -> domain name = cnet"
 function domainName(url) {
-	url.replace('htt')
+	return url.replace(/.+\/\/|www.|\..+/g, '');
 }

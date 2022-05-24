@@ -6,6 +6,10 @@
 // 3) n = 100, x = 5, y = 3 => false because 100 is not divisible by 3
 // 4) n =  12, x = 7, y = 5 => false because  12 is neither divisible by 7 nor 5
 
+// function isDivisible(n, x, y) {
+// 	return (n % y) + (n % x) == 0 ? true : false
+// }
+
 function isDivisible(n, x, y) {
-	return (n % y) + (n % x) == 0 ? true : false
+	return (n % y) + (n % x) == 0
 }

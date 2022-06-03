@@ -14,7 +14,8 @@
 // * Input: [2,2,1,2,1], output = [2,2,2,1]
 
 function removeSmallest(numbers) {
-	let myIndex = numbers.indexOf(Math.min(...numbers))
-	if (myIndex !== -1) numbers.splice(myIndex, 1)
-	return numbers
+	let arrClone = numbers.slice(0);
+	let myIndex = arrClone.indexOf(Math.min(...arrClone))
+	if (myIndex !== -1) arrClone.splice(myIndex, 1)
+	return arrClone;
 }

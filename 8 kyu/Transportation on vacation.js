@@ -7,5 +7,5 @@
 // Write a code that gives out the total amount for different days(d).
 
 function rentalCarCost(d) {
-	return d * 40 + (d >= 3 ? (d >= 7 ? -50 : -20) : 0)
+	return d * 40 - (d >= 3 ? (d >= 7 ? 50 : 20) : 0)
 }

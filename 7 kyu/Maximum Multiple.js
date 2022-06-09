@@ -24,8 +24,13 @@
 // Explanation:
 // (185) is divisible by (37) , (185) is less than or equal to bound (200) , and (185) is > 0 .
 
+
 function maxMultiple(divisor, bound) {
-	for (let i = bound; i <= bound; i--) {
-		if (i % divisor == 0) return i
-	}
+	return bound - bound % divisor
 }
+
+// function maxMultiple(divisor, bound) {
+// 	for (let i = bound; i <= bound; i--) {
+// 		if (i % divisor == 0) return i
+// 	}
+// }

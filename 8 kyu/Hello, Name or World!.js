@@ -9,10 +9,4 @@
 // * With `name` not given 
 //   or `name` = ""        => return "Hello, World!"
 
-function hello(name) {
-	if (name == '' || name == undefined) return 'Hello, World!'
-	let firstLetter = name[0]
-	firstLetter = firstLetter.toUpperCase()
-	name = firstLetter + name.slice(1).toLowerCase()
-	return `Hello, ${name}!`
-}
+const hello = s => `Hello, ${s ? s[0].toUpperCase() + s.slice(1).toLowerCase() : 'World'}!`

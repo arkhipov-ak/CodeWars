@@ -6,6 +6,8 @@
 
 // Trivia: While ∞ can be pronounced as infinity, it's preferred to be pronounced as mugen here. It's the same, but way cooler.
 
+// FIRST SOLUTION - 102 LINES
+
 [
 ,
 j

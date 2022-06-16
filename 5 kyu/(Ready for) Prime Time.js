@@ -5,11 +5,12 @@
 // 11 => [2, 3, 5, 7, 11]
 
 function prime(num) {
-	let primes = [];
-	loop: for(let i = 2; i <= num; i++) {
-		for(j = 0; i <= primes.length; j++) {
-			if(i % primes[j] === 0) continue loop;
+	let primes = []
+	loop: for (let i = 2; i <= num; i++) {
+		for (let j = 0; j <= primes.length; j++) {
+			if (i % primes[j] === 0) continue loop
 		}
+		primes.push(i)
 	}
-	return primes;
+	return primes
 }

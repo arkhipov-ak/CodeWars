@@ -7,16 +7,22 @@ function sevenAte9(str) {
 	return str.replace(/79(?=7)/g, '7')
 }
 
+// function sevenAte9(str) {
+// 	str = str.replace(/797/g, '77')
+// 	str = str.replace(/797/g, '77')
+// 	return str
+// }
+
 // Solution without regex
 
-function sevenAte9(str) {
-	let strValidate = ''
-	for (let i = 0; i < str.length; i++) {
-		if (str[i - 1] == 7 && str[i + 1] == 7 && str[i] == 9) {
-			strValidate += ''
-		} else {
-			strValidate += str[i]
-		}
-	}
-	return strValidate
-}
+// function sevenAte9(str) {
+// 	let strValidate = ''
+// 	for (let i = 0; i < str.length; i++) {
+// 		if (str[i - 1] == 7 && str[i + 1] == 7 && str[i] == 9) {
+// 			strValidate += ''
+// 		} else {
+// 			strValidate += str[i]
+// 		}
+// 	}
+// 	return strValidate
+// }

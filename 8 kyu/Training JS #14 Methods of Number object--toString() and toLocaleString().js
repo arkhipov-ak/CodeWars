@@ -1,8 +1,8 @@
 // This time we learn about two useful methods of Number objects: toString() and toLocaleString(). the basic usage of the two methods is to convert a number into a string. look at this:
 
 // var num=111;
-// var a=num.toString(), 
-//     b=num.toLocaleString(), 
+// var a=num.toString(),
+//     b=num.toLocaleString(),
 //     c=num+""
 // console.log([a,b,c])   //put them to an array, we can see the quotes
 // //output: [ '111', '111', '111' ]
@@ -18,9 +18,9 @@
 // radix is optional parameter. if ignored it, the output will be the default decimal. If not, like this:
 
 // var num=111;
-// var a=num.toString(2), 
-//     b=num.toString(8), 
-//     c=num.toString(16), 
+// var a=num.toString(2),
+//     b=num.toString(8),
+//     c=num.toString(16),
 // console.log([a,b,c])
 // //output: [ '1101111', '157', '6f' ]
 // They are converted to binary, octal and hexadecimal.
@@ -41,10 +41,10 @@
 // colorOf(1, 2 ,3) should return "#010203"
 // That's all of your work. My work is print your color code on your screen.
 
-function colorOf(r,g,b){
-  const toHex = (c) => {
-    const hex = c.toString(16)
-    return hex.length == 1 ? "0" + hex : hex
-  }
-  return `#${toHex(r)}${toHex(g)}${toHex(b)}`
+function colorOf(r, g, b) {
+	const toHex = c => {
+		const hex = c.toString(16)
+		return hex.length == 1 ? '0' + hex : hex
+	}
+	return `#${toHex(r)}${toHex(g)}${toHex(b)}`
 }

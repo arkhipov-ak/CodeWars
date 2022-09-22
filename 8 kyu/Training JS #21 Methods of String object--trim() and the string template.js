@@ -85,10 +85,5 @@
 // xyxyxyxyxy  <---The effect when you console.log it
 
 function fiveLine(s) {
-	return [...Array(5)].map((_, i) =>
-		s
-			.trim()
-			.repeat(i + 1)
-			.join('\n')
-	)
+	return [1, 2, 3, 4, 5].map(n => s.trim().repeat(n)).join('\n')
 }
